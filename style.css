@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.4rem;
+  background-color: #f8dcdc;
+}
+img {
+  display: block;
+  max-width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.container {
+  max-width: 90%;
+  /* border: 2px solid red; */
+  margin: 1em auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+}
+
+aside,
+main {
+  /* border: 2px solid blue; */
+  border-radius: 16px;
+  box-shadow: 0px 6px 15px gray;
+  background-color: rgb(255, 255, 255);
+}
+
+/*aside*/
+.icon-col {
+  color: rgb(64, 64, 191);
+}
+.img-box {
+  position: relative;
+  /* margin-bottom: 0.4em;   */
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+.contents {
+  padding: 1em;
+  /* border: 2px solid pink; */
+}
+.items {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  margin-bottom: 0.6em;
+}
+.mb {
+  margin-bottom: 0.4em;
+}
+/*skill-heading*/
+.skill-heading,
+.language-header {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.skill-item {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+}
+.skill {
+  background-color: rgb(35, 120, 211);
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.photoshoot {
+  width: 90%;
+}
+.photography {
+  width: 80%;
+}
+.illustrator {
+  width: 75%;
+}
+.media {
+  width: 50%;
+}
+.english {
+  width: 100%;
+}
+.spanish {
+  width: 75%;
+}
+.german {
+  width: 30%;
+}
+.bar {
+  margin-bottom: 0.4em;
+}
+
+/* Main page */
+
+.main-page {
+  max-width: 100%;
+  padding: 1.2em;
+}
+.sec-heading {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+  text-align: center;
+}
+.inner-section {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.calender-col {
+  color: blue;
+}
+
+@media only screen and (max-width: 1120px) {
+  .main-page {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .sec-heading {
+    flex-wrap: wrap;
+  }
+  .sec-heading i {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .sec-heading h2 {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
